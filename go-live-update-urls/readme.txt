@@ -3,9 +3,9 @@ Contributors: Mat Lipe, onpointplugins
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=paypal%40onpointplugins%2ecom&lc=US&item_name=Go%20Live%20Update%20Urls&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Tags: search and replace, database, urls, domain, update urls
 Requires at least: 6.2.0
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.4.0
-Stable tag: 6.8.0
+Stable tag: 7.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Change the domain on your site with one click.
@@ -112,6 +112,15 @@ If you find you are running into issues with custom tables, you may want to chec
 3. Update prevented due to incomplete data entered.
 
 == Changelog ==
+= 7.0.0 =
+* Introduced class constants for admin capability and parent menu.
+* Introduced `Admin::get_admin_capability` method.
+* Introduced `go-live-update-urls/admin/admin-capability` filter.
+* Removed deprecated `Core::sanitize_field` method.
+* Converted GitHub Actions and Git hooks to distributed versions.
+* Tested to WordPress 6.6.2.
+* Required PRO version 7.0.0+.
+
 = 6.8.0 =
 * Added support for PHP based translations.
 * Bumped required WordPress version to 6.2.0.
